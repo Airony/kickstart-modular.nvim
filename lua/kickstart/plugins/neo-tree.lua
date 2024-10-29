@@ -20,6 +20,11 @@ return {
           ['\\'] = 'close_window',
         },
       },
+      hide_by_pattern = {
+        '*.h',
+      },
+      hijack_netrw_behavior = 'open_default',
     },
   },
+  lazy = false,
 }
