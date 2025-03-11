@@ -1,0 +1,45 @@
+return {}
+-- local function prettier()
+--   return {
+--     exe = './node_modules/prettier', -- change this to your prettier path
+--     args = {
+--       '--config-precedence',
+--       'prefer-file',
+--       '--print-width',
+--       vim.bo.textwidth,
+--       '--stdin-filepath',
+--       vim.fn.shellescape(vim.api.nvim_buf_get_name(0)),
+--     },
+--     stdin = true,
+--   }
+-- end
+--
+-- return {
+--   'mhartington/formatter.nvim',
+--   config = function()
+--     local util = require 'formatter.util'
+--     require('formatter').setup {
+--       -- Enable or disable logging
+--       logging = true,
+--       -- Set the log level
+--       log_level = vim.log.levels.WARN,
+--       -- All formatter configurations are opt-in
+--       filetype = {
+--         ["json","js","ts","jsx","tsx"] = {
+--           prettier(),
+--         },
+--         -- Formatter configurations for filetype "lua" go here
+--         -- and will be executed in order
+--         -- Use the special "*" filetype for defining formatter configurations on
+--         -- any filetype
+--         ['*'] = {
+--           -- "formatter.filetypes.any" defines default configurations for any
+--           -- filetype
+--           require('formatter.filetypes.any').remove_trailing_whitespace,
+--           -- Remove trailing whitespace without 'sed'
+--           -- require("formatter.filetypes.any").substitute_trailing_whitespace,
+--         },
+--       },
+--     }
+--   end,
+-- }
