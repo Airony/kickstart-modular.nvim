@@ -27,7 +27,7 @@ return {
           lsp_format_opt = 'fallback'
         end
         return {
-          timeout_ms = 500,
+          timeout_ms = 5000,
           lsp_format = lsp_format_opt,
         }
       end,
@@ -37,9 +37,23 @@ return {
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'prettier', stop_after_first = true },
+        typescript = { 'prettier', stop_after_first = true },
+        typescriptreact = { 'prettier', stop_after_first = true },
+        javascriptreact = { 'prettier', stop_after_first = true },
+        json = { 'prettier', stop_after_first = true },
+        html = { 'prettier', stop_after_first = true },
+        css = { 'prettier', stop_after_first = true },
       },
+      formatters = {},
     },
+    -- config = function ()
+    --   local conform = require("conform")
+    --   conform.setup({
+    --     prettier
+    --   })
+
+    -- end
   },
 }
 -- vim: ts=2 sts=2 sw=2 et
