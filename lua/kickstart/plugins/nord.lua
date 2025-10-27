@@ -8,6 +8,7 @@ return {
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
+      vim.g.nord_bold = false
       vim.cmd.colorscheme 'nord'
 
       -- You can configure highlights by doing something like:
