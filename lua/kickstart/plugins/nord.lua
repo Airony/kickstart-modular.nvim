@@ -9,10 +9,10 @@ return {
     init = function()
       -- Load the colorscheme here.
       vim.g.nord_bold = false
-      vim.cmd.colorscheme 'nord'
+      -- vim.cmd.colorscheme 'nord'
 
       -- You can configure highlights by doing something like:
-      vim.cmd.hi 'Comment gui=none'
+      -- vim.cmd.hi 'Comment gui=none'
     end,
   },
 }
